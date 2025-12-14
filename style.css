@@ -1,0 +1,137 @@
+/* Đặt phông chữ cơ bản cho toàn bộ trang */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Định dạng Header - Dùng Flexbox để căn chỉnh nội dung */
+header {
+    background-color: #7b0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Bổ sung Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* Định dạng nội dung chính */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Định dạng hình ảnh bìa */
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Thêm hiệu ứng chuyển động cho box */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi rê chuột vào khung ảnh */
+.banner:hover {
+    transform: scale(1.01); 
+}
+
+.banner img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 4px;
+    /* Thêm hiệu ứng đổ bóng nhẹ cho ảnh */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Định dạng các phần section/article */
+section, article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề các phần */
+h2 {
+    color: #b54a00;
+    border-bottom: 3px solid #b54a00;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng Fun Facts (aside) */
+aside {
+    background-color: #fff8e1;
+    border-left: 5px solid #ffcc80;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+}
+
+/* Định dạng danh sách trong aside (Fun Facts) */
+aside ul {
+    padding-left: 20px;
+}
+aside li {
+    margin-bottom: 8px;
+}
+
+/* Định dạng Footer */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Định dạng chữ in đậm trong nội dung */
+b {
+    color: #000000;
+}
+
+/* Định dạng liên kết */
+a {
+    color: #7b0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
